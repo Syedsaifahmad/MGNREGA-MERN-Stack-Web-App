@@ -1,0 +1,107 @@
+.district-selector {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px; /* 👈 full width on big screens but maxed */
+  margin: 40px auto;
+  transition: all 0.3s ease;
+}
+
+.district-selector h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.selector-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* 👈 ensures proper wrap on mobile */
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  width: 60%;
+  min-width: 180px;
+}
+
+.dropdown:focus {
+  border-color: #007bff;
+}
+
+.fetch-btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.fetch-btn:disabled {
+  background-color: #9ec5fe;
+  cursor: not-allowed;
+}
+
+.fetch-btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* 📱 Mobile Devices (≤ 480px) */
+@media (max-width: 480px) {
+  .district-selector {
+    padding: 20px;
+    width: 95%;
+    max-width: 380px; /* 👈 as per your request */
+    margin: 20px auto;
+  }
+
+  .district-selector h2 {
+    font-size: 18px;
+  }
+
+  .selector-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .dropdown {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .fetch-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+/* 💻 Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .district-selector {
+    width: 85%;
+    max-width: 450px;
+  }
+
+  .dropdown {
+    width: 70%;
+  }
+}
+
+/* 🖥️ Laptops & Desktops (≥ 769px) */
+@media (min-width: 769px) {
+  .district-selector {
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,151 @@
+.district-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Back Button */
+.back-btn {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #2c82c9;
+}
+
+/* Header */
+.district-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.district-header h1 {
+  font-size: 2rem;
+  color: #2d3436;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #636e72;
+}
+
+/* Chart Section */
+.chart-wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 30px;
+}
+
+.chart-container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Data Cards */
+.data-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #0078ff;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+/* Loading & Error */
+.loading,
+.error {
+  text-align: center;
+  color: #555;
+  margin-top: 40px;
+  font-size: 1.1rem;
+}
+
+/* ✅ Responsive Design */
+
+/* Tablet View (≤ 992px) */
+@media (max-width: 992px) {
+  .district-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .data-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-container {
+    padding: 20px;
+  }
+}
+
+/* Mobile View (≤ 600px) */
+@media (max-width: 600px) {
+  .district-page {
+    padding: 15px;
+  }
+
+  .back-btn {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  .district-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .chart-container {
+    padding: 15px;
+  }
+
+  .data-cards {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 0.95rem;
+  }
+
+  .card p {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,82 @@
+/* Container */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  font-family: "Poppins", sans-serif;
+  /* padding: 20px; */
+}
+
+/* Inner Box */
+.home-content {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 40px 60px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Title */
+.home-content h1 {
+  color: #1565c0;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+/* Subtitle */
+.subtitle {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 30px;
+}
+
+/* Loading & Error Texts */
+.loading {
+  color: #0288d1;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.error {
+  color: #e53935;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* ✅ Responsive Styling */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .home-content {
+    padding: 30px 40px;
+  }
+
+  .home-content h1 {
+    font-size: 1.7rem;
+  }
+
+  .subtitle {
+    font-size: 0.95rem;
+  }
+}
+
+/* Phones */
+@media (max-width: 380px) {
+  .home-content {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
