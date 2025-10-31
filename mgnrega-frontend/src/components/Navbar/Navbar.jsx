@@ -17,10 +17,6 @@ const Navbar = () => {
           <li onClick={() => navigate("/About")}>About</li>
           <li onClick={() => navigate("/contact")}>Contact</li>
         </ul>
-
-        <button className="nav-btn" onClick={() => navigate("/")}>
-          Go to Home
-        </button>
       </div>
     </nav>
   );
