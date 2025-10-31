@@ -22,7 +22,7 @@ const DistrictDetails = () => {
   React.useEffect(() => {
     const fetchDistrictData = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/mgnrega/${district}`);
+        const res = await fetch(`https://mgnrega-mern-stack-web-app.onrender.com/api/mgnrega/${district}`);
         const result = await res.json();
 
         if (result.success && result.data) {

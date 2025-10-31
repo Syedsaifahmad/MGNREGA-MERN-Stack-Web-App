@@ -19,7 +19,7 @@ const Home = () => {
     setError("");
 
     try {
-      const response = await fetch(`http://localhost:5000/api/mgnrega/${district}`);
+      const response = await fetch(`https://mgnrega-mern-stack-web-app.onrender.com/api/mgnrega/${district}`);
       const data = await response.json();
 
       console.log("Fetched Data:", data);
